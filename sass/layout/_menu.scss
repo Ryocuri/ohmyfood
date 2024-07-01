@@ -173,20 +173,6 @@
 }
 
 //TIMELINE DE "ENTREES, PLATS, DESSERTS" (PAGE MENU)
-/*.page-menu > :nth-of-type(1){
-    animation: SlideDown .9s ease-in-out;
-}
-.page-menu > :nth-of-type(2){
-    animation: SlideDown 1.2s ease-in-out;
-}
-.page-menu > :nth-of-type(3){
-    animation: SlideDown 1.5s ease-in-out;
-}
-.page-menu > :nth-of-type(4){
-    animation: SlideDown 1.8s ease-in-out;
-}*/
-
-// for loop for the code above
 @for $i from 1 through 4 {
   .page-menu > :nth-of-type(#{$i}) {
     animation: SlideDown #{$i * 0.3 + 0.6}s ease-in-out;
