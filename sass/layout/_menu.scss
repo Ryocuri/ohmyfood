@@ -173,7 +173,7 @@
 }
 
 //TIMELINE DE "ENTREES, PLATS, DESSERTS" (PAGE MENU)
-@for $i from 1 through 4 {
+@for $i from 1 through 4 { // TODO : insérer une variable
   .page-menu > :nth-of-type(#{$i}) {
     animation: SlideDown #{$i * 0.3 + 0.6}s ease-in-out;
   }
