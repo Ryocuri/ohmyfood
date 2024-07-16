@@ -393,6 +393,30 @@
   animation: SlideDown 1.8s ease-in-out;
 }
 
+.page-menu > :nth-of-type(5) {
+  animation: SlideDown 2.1s ease-in-out;
+}
+
+.page-menu > :nth-of-type(6) {
+  animation: SlideDown 2.4s ease-in-out;
+}
+
+.page-menu > :nth-of-type(7) {
+  animation: SlideDown 2.7s ease-in-out;
+}
+
+.page-menu > :nth-of-type(8) {
+  animation: SlideDown 3s ease-in-out;
+}
+
+.page-menu > :nth-of-type(9) {
+  animation: SlideDown 3.3s ease-in-out;
+}
+
+.page-menu > :nth-of-type(10) {
+  animation: SlideDown 3.6s ease-in-out;
+}
+
 @keyframes SlideDown {
   from {
     transform: translateY(70px);
