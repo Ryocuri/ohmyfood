@@ -57,15 +57,25 @@
     @include subtitle
   }
 
+  .hoverheart {
+    .hoverheart__content-solid {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .hoverheart__content-light {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+
   .hoverheart:hover {
     .hoverheart__content-solid {
       opacity: 1;
-      transition: .3s ease-in-out;
     }
 
     .hoverheart__content-light {
       opacity: 0;
-      transition: .3s ease-in-out;
     }
   }
 
@@ -74,19 +84,17 @@
     background: $gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 0;
   }
 
   .hoverheart__content-light {
     @include heart;
-    opacity: 1;
   }
 }
 
 // BREAKPOINT DESKTOP (PAGE RESTAURANT)
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1036px) {
   .restaurant__title, .restaurant-inserts {
-    max-width: 1024px;
+    max-width: 1036px;
     margin: auto;
   }
   .restaurant-inserts {

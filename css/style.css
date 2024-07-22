@@ -183,13 +183,19 @@
   font-weight: normal;
   font-size: 1rem;
 }
+.restaurant-card .hoverheart .hoverheart__content-solid {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.restaurant-card .hoverheart .hoverheart__content-light {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
 .restaurant-card .hoverheart:hover .hoverheart__content-solid {
   opacity: 1;
-  transition: 0.3s ease-in-out;
 }
 .restaurant-card .hoverheart:hover .hoverheart__content-light {
   opacity: 0;
-  transition: 0.3s ease-in-out;
 }
 .restaurant-card .hoverheart__content-solid {
   font-size: 1.5rem;
@@ -199,19 +205,17 @@
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0;
 }
 .restaurant-card .hoverheart__content-light {
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
   bottom: 25px;
-  opacity: 1;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1036px) {
   .restaurant__title, .restaurant-inserts {
-    max-width: 1024px;
+    max-width: 1036px;
     margin: auto;
   }
   .restaurant-inserts {
@@ -471,6 +475,14 @@
   .footer-insert {
     max-width: 1024px;
     margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer-insert__title {
+    margin-left: 10vw;
+  }
+  .footer-insert__link {
+    margin-left: 3vw;
   }
 }
 .loader {
