@@ -261,15 +261,7 @@
   font-size: 1.75rem;
   margin: 0;
 }
-.restaurant-page-menu .hoverheart:hover .hoverheart__content-solid {
-  opacity: 1;
-  transition: 0.3s ease-in-out;
-}
-.restaurant-page-menu .hoverheart:hover .hoverheart__content-light {
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-.restaurant-page-menu .hoverheart__content-solid {
+.restaurant-page-menu .hoverheart .hoverheart__content-solid {
   cursor: pointer;
   font-size: 1.5rem;
   position: absolute;
@@ -278,6 +270,17 @@
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.restaurant-page-menu .hoverheart .hoverheart__content-light {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.restaurant-page-menu .hoverheart:hover .hoverheart__content-solid {
+  opacity: 1;
+}
+.restaurant-page-menu .hoverheart:hover .hoverheart__content-light {
   opacity: 0;
 }
 .restaurant-page-menu .hoverheart__content-light {
@@ -335,6 +338,9 @@
   margin: 15px 0px 5px 15px;
   font-weight: bold;
   font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .page-menu-insert__subtitle {
   display: flex;

@@ -37,28 +37,34 @@
 
   }
 
+  .hoverheart {
+    .hoverheart__content-solid {
+      cursor: pointer;
+      font-size: 1.5rem;
+      position: absolute;
+      right: 5px;
+      top: 30px;
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .hoverheart__content-light {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+
   .hoverheart:hover {
     .hoverheart__content-solid {
       opacity: 1;
-      transition: .3s ease-in-out;
     }
 
     .hoverheart__content-light {
       opacity: 0;
-      transition: .3s ease-in-out;
     }
-  }
-
-  .hoverheart__content-solid {
-    cursor: pointer;
-    font-size: 1.5rem;
-    position: absolute;
-    right: 5px;
-    top: 30px;
-    background: $gradient;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0;
   }
 
   .hoverheart__content-light {
@@ -121,7 +127,10 @@
   }
 
   &-insert__title {
-    @include title
+    @include title;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &-insert__subtitle {
