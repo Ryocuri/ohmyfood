@@ -1,0 +1,34 @@
+.hoverheart {
+  &__content-solid {
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 5px;
+    top: 30px;
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__content-light {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 5px;
+    top: 30px;
+  }
+
+  &:hover {
+    .hoverheart__content-solid {
+      opacity: 1;
+    }
+
+    .hoverheart__content-light {
+      opacity: 0;
+    }
+  }
+}

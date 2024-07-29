@@ -27,12 +27,6 @@
 .functioning-insert {
   padding-bottom: 50px;
 }
-.functioning__title {
-  font-weight: bold;
-  font-size: 1.5rem;
-  padding: 50px 0 10px 20px;
-  margin: 0;
-}
 .functioning-insert__link {
   text-decoration: none;
   display: flex;
@@ -49,6 +43,10 @@
 .functioning-insert__link:hover .functioning-insert-ball__icon {
   color: #9356DC;
   transition: 0.5s linear;
+}
+.functioning-insert__text {
+  padding: 27px;
+  margin: 0;
 }
 .functioning-insert-ball {
   position: relative;
@@ -69,8 +67,10 @@
   font-weight: bold;
   color: white;
 }
-.functioning-insert__text {
-  padding: 27px;
+.functioning__title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 50px 0 10px 20px;
   margin: 0;
 }
 
@@ -261,36 +261,6 @@
   font-size: 1.75rem;
   margin: 0;
 }
-.restaurant-page-menu .hoverheart .hoverheart__content-solid {
-  cursor: pointer;
-  font-size: 1.5rem;
-  position: absolute;
-  right: 5px;
-  top: 30px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-.restaurant-page-menu .hoverheart .hoverheart__content-light {
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
-.restaurant-page-menu .hoverheart:hover .hoverheart__content-solid {
-  opacity: 1;
-}
-.restaurant-page-menu .hoverheart:hover .hoverheart__content-light {
-  opacity: 0;
-}
-.restaurant-page-menu .hoverheart__content-light {
-  cursor: pointer;
-  font-size: 1.5rem;
-  position: absolute;
-  right: 5px;
-  top: 30px;
-  opacity: 1;
-}
 
 .page-menu__title {
   padding-bottom: 12px;
@@ -479,7 +449,6 @@
 
 @media screen and (min-width: 1024px) {
   .footer-insert {
-    max-width: 1024px;
     margin: auto;
     display: flex;
     flex-direction: row-reverse;
@@ -571,6 +540,34 @@
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
+}
+
+.hoverheart__content-solid {
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 5px;
+  top: 30px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.hoverheart__content-light {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 5px;
+  top: 30px;
+}
+.hoverheart:hover .hoverheart__content-solid {
+  opacity: 1;
+}
+.hoverheart:hover .hoverheart__content-light {
+  opacity: 0;
 }
 
 * {
