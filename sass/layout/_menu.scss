@@ -168,7 +168,6 @@
 @media screen and (min-width: 1024px) {
   .page-menu__title {
     max-width: 1024px;
-    margin: auto;
   }
   .restaurant-page-menu__title {
     max-width: 1024px;
@@ -176,6 +175,7 @@
   }
   .page-menu {
     max-width: 1024px;
+    margin: auto;
     flex-direction: column;
 
     &-insert {
