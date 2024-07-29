@@ -513,6 +513,12 @@
   transition: opacity 250ms;
 }
 
+.restaurant-card .hoverheart__content-solid, .restaurant-card .hoverheart__content-light {
+  top: unset;
+  right: 20px;
+  bottom: 24px;
+}
+
 .hoverheart__content-solid {
   cursor: pointer;
   font-size: 1.5rem;

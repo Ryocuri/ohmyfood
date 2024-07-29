@@ -1,3 +1,9 @@
+.restaurant-card .hoverheart__content-solid, .restaurant-card .hoverheart__content-light {
+  top: unset;
+  right: 20px;
+  bottom: 24px;
+}
+
 .hoverheart {
   &__content-solid {
     cursor: pointer;
