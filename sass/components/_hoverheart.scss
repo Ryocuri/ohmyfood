@@ -5,6 +5,20 @@
 }
 
 .hoverheart {
+
+  background: none;
+  border: none;
+
+  &:hover &__content-light,
+  &__checkbox:checked ~ &__content-light {
+    opacity: 0;
+  }
+
+  &:hover &__content-solid,
+  &__checkbox:checked ~ &__content-solid {
+    opacity: 1;
+  }
+
   &__content-solid {
     cursor: pointer;
     font-size: 1.5rem;
