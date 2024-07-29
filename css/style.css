@@ -235,7 +235,7 @@
 
 .page-menu {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .page-menu__articles {
   display: flex;
