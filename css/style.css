@@ -392,7 +392,6 @@
   }
   .page-menu {
     max-width: 1024px;
-    margin: auto;
     flex-direction: column;
   }
   .page-menu-insert {
