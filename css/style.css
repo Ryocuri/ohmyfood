@@ -531,6 +531,9 @@
 .hoverheart:hover .hoverheart__content-solid, .hoverheart__checkbox:checked ~ .hoverheart__content-solid {
   opacity: 1;
 }
+.hoverheart__checkbox {
+  opacity: 0;
+}
 .hoverheart__content-solid {
   cursor: pointer;
   font-size: 1.5rem;
