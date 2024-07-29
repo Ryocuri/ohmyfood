@@ -56,39 +56,6 @@
   &-heading__place {
     @include subtitle
   }
-
-  .hoverheart {
-    .hoverheart__content-solid {
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-    }
-
-    .hoverheart__content-light {
-      opacity: 1;
-      transition: opacity 0.3s ease-in-out;
-    }
-  }
-
-  .hoverheart:hover {
-    .hoverheart__content-solid {
-      opacity: 1;
-    }
-
-    .hoverheart__content-light {
-      opacity: 0;
-    }
-  }
-
-  .hoverheart__content-solid {
-    @include heart;
-    background: $gradient;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .hoverheart__content-light {
-    @include heart;
-  }
 }
 
 // BREAKPOINT DESKTOP (PAGE RESTAURANT)

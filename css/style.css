@@ -183,35 +183,6 @@
   font-weight: normal;
   font-size: 1rem;
 }
-.restaurant-card .hoverheart .hoverheart__content-solid {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-.restaurant-card .hoverheart .hoverheart__content-light {
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
-.restaurant-card .hoverheart:hover .hoverheart__content-solid {
-  opacity: 1;
-}
-.restaurant-card .hoverheart:hover .hoverheart__content-light {
-  opacity: 0;
-}
-.restaurant-card .hoverheart__content-solid {
-  font-size: 1.5rem;
-  position: absolute;
-  right: 25px;
-  bottom: 25px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.restaurant-card .hoverheart__content-light {
-  font-size: 1.5rem;
-  position: absolute;
-  right: 25px;
-  bottom: 25px;
-}
 
 @media screen and (min-width: 1036px) {
   .restaurant__title, .restaurant-inserts {
