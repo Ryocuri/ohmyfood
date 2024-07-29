@@ -39,6 +39,14 @@
 }
 
 .page-menu {
+  display: flex;
+  flex-direction: row;
+
+  &__articles {
+    display: flex;
+    flex-direction: row;
+  }
+
   &__title {
     padding-bottom: 12px;
     text-transform: uppercase;
@@ -55,11 +63,6 @@
       width: 40px;
     }
   }
-}
-
-.page-menu {
-  display: flex;
-  flex-direction: column;
 
   &-insert {
     margin: 0 15px 15px 0;

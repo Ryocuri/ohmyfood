@@ -233,6 +233,14 @@
   margin: 0;
 }
 
+.page-menu {
+  display: flex;
+  flex-direction: row;
+}
+.page-menu__articles {
+  display: flex;
+  flex-direction: row;
+}
 .page-menu__title {
   padding-bottom: 12px;
   text-transform: uppercase;
@@ -247,11 +255,6 @@
   margin-top: 5px;
   height: 3px;
   width: 40px;
-}
-
-.page-menu {
-  display: flex;
-  flex-direction: column;
 }
 .page-menu-insert {
   margin: 0 15px 15px 0;
