@@ -74,9 +74,9 @@
   margin: 0;
 }
 
-@media screen and (min-width: 1036px) {
+@media screen and (min-width: 1024px) {
   .functioning {
-    max-width: 1036px;
+    max-width: 1024px;
     margin: auto;
   }
   .functioning-insert {
@@ -184,9 +184,9 @@
   font-size: 1rem;
 }
 
-@media screen and (min-width: 1036px) {
+@media screen and (min-width: 1024px) {
   .restaurant__title, .restaurant-inserts {
-    max-width: 1036px;
+    max-width: 1024px;
     margin: auto;
   }
   .restaurant-inserts {
@@ -196,7 +196,7 @@
   }
   .restaurant-card {
     width: 470px;
-    margin: 10px 20px;
+    margin: 10px 16px;
   }
 }
 .picture-restaurant {
@@ -392,10 +392,13 @@
   }
   .page-menu-insert {
     margin: 0 15px 30px 0;
+    flex: 0 1 calc(33% - 14px);
+    max-width: calc(33% - 14px);
   }
   .page-menu__articles {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 .footer {

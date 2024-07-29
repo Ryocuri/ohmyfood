@@ -59,9 +59,9 @@
 }
 
 // BREAKPOINT DESKTOP (PAGE RESTAURANT)
-@media screen and (min-width: 1036px) {
+@media screen and (min-width: 1024px) {
   .restaurant__title, .restaurant-inserts {
-    max-width: 1036px;
+    max-width: 1024px;
     margin: auto;
   }
   .restaurant-inserts {
@@ -71,6 +71,6 @@
   }
   .restaurant-card {
     width: 470px;
-    margin: 10px 20px;
+    margin: 10px 16px;
   }
 }
