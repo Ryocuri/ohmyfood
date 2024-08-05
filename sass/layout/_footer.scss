@@ -2,16 +2,14 @@
 .footer {
   background: darken($dark-grey, 30%);
 
+  &-omf__logo {
+    width: 100px;
+    margin: 10px 0;
+    filter: invert(1);
+  }
+
   &-insert {
     padding: 30px;
-
-    &__title {
-      color: white;
-      font-family: $second-font;
-      letter-spacing: 0.05rem;
-      margin: 0;
-      padding-bottom: 20px;
-    }
 
     &__link {
       display: block;
@@ -26,7 +24,7 @@
 }
 
 // BREAKPOINT DESKTOP FOOTER 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .footer-insert {
     margin: auto;
     display: flex;

@@ -60,13 +60,15 @@
 }
 
 // BREAKPOINT DESKTOP FONCTIONNEMENT
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .functioning {
     max-width: 1024px;
     margin: auto;
+
+    &-insert {
+      display: flex;
+      justify-content: space-between;
+    }
   }
-  .functioning-insert {
-    display: flex;
-    justify-content: space-between;
-  }
+
 }

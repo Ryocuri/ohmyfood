@@ -74,7 +74,7 @@
   margin: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .functioning {
     max-width: 1024px;
     margin: auto;
@@ -184,7 +184,7 @@
   font-size: 1rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .restaurant__title, .restaurant-inserts {
     max-width: 1024px;
     margin: auto;
@@ -377,14 +377,7 @@
     opacity: 1;
   }
 }
-@media screen and (min-width: 1024px) {
-  .page-menu__title {
-    max-width: 1024px;
-  }
-  .restaurant-page-menu__title {
-    max-width: 1024px;
-    margin: auto;
-  }
+@media screen and (min-width: 1025px) {
   .page-menu {
     max-width: 1024px;
     margin: auto;
@@ -400,19 +393,24 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .page-menu__title {
+    max-width: 1024px;
+  }
+  .restaurant-page-menu__title {
+    max-width: 1024px;
+    margin: auto;
+  }
 }
 .footer {
   background: rgba(23, 23, 23, 0.8);
 }
+.footer-omf__logo {
+  width: 100px;
+  margin: 10px 0;
+  filter: invert(1);
+}
 .footer-insert {
   padding: 30px;
-}
-.footer-insert__title {
-  color: white;
-  font-family: "Shrikhand", cursive;
-  letter-spacing: 0.05rem;
-  margin: 0;
-  padding-bottom: 20px;
 }
 .footer-insert__link {
   display: block;
@@ -423,7 +421,7 @@
   width: 30px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .footer-insert {
     margin: auto;
     display: flex;

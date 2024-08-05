@@ -83,60 +83,60 @@
       transform: rotate(360deg);
       transition: .5s ease-in-out;
     }
-  }
 
-  &-insert__title {
-    @include title;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+    &__title {
+      @include title;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 
-  &-insert__subtitle {
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    width: 100%;
-    transform-origin: left 50%;
-    transition-duration: .5s;
-  }
+    &__subtitle {
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      width: 100%;
+      transform-origin: left 50%;
+      transition-duration: .5s;
+    }
 
-  &-insert__text {
-    @include subtitle($size: 0.85rem);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+    &__text {
+      @include subtitle($size: 0.85rem);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 
-  &-insert__price {
-    margin: 0;
-    font-weight: bold;
-    padding-left: 10px;
-    width: 50px;
-  }
+    &__price {
+      margin: 0;
+      font-weight: bold;
+      padding-left: 10px;
+      width: 50px;
+    }
 
-  &-insert__check {
-    position: absolute;
-    background-color: $turquoise;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 65px;
-    transform-origin: right 50%;
-    border-radius: 0px 20px 20px 0px;
-    transform: translateX(65px);
-    overflow: hidden;
-    transition-duration: .5s;
-  }
+    &__check {
+      position: absolute;
+      background-color: $turquoise;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 65px;
+      transform-origin: right 50%;
+      border-radius: 0px 20px 20px 0px;
+      transform: translateX(65px);
+      overflow: hidden;
+      transition-duration: .5s;
+    }
 
-  &-insert__checkcontent {
-    position: absolute;
-    left: 20px;
-    top: 25px;
-    font-size: 1.5rem;
-    transform: rotate(0deg);
-    color: white;
-    opacity: 1;
+    &__checkcontent {
+      position: absolute;
+      left: 20px;
+      top: 25px;
+      font-size: 1.5rem;
+      transform: rotate(0deg);
+      color: white;
+      opacity: 1;
+    }
   }
 }
 
@@ -160,14 +160,7 @@
 }
 
 // BREAKPOINT DESKTOP (PAGE MENU)
-@media screen and (min-width: 1024px) {
-  .page-menu__title {
-    max-width: 1024px;
-  }
-  .restaurant-page-menu__title {
-    max-width: 1024px;
-    margin: auto;
-  }
+@media screen and (min-width: 1025px) {
   .page-menu {
     max-width: 1024px;
     margin: auto;
@@ -184,5 +177,14 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
+
+    &__title {
+      max-width: 1024px;
+    }
+  }
+
+  .restaurant-page-menu__title {
+    max-width: 1024px;
+    margin: auto;
   }
 }
