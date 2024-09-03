@@ -396,11 +396,12 @@
     padding-bottom: 0;
   }
   .restaurant-page-menu {
-    margin: -50px 200px 0 200px;
+    margin: -50px auto 0 auto;
     background-color: #ececec;
     border-radius: 40px 40px 0 0;
     position: relative;
-    padding: 20px 0;
+    padding: 20px 30px;
+    width: 1025px;
   }
   .restaurant-page-menu__title {
     max-width: 330px;
