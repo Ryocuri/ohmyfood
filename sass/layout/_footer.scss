@@ -28,10 +28,12 @@
   .footer-insert {
     margin: auto;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: flex-end;
 
     &__title {
       margin-left: 10vw;
+      order: 1;
     }
 
     &__link {
